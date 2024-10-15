@@ -1,7 +1,7 @@
 /* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    background: #e9ecef;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,9 @@ body {
 }
 
 #chat-container {
-    width: 400px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 15px;
     overflow: hidden;
     background: #ffffff;
     display: flex;
@@ -20,40 +20,47 @@ body {
 }
 
 #chat-window {
-    height: 350px;
+    height: 400px;
     overflow-y: auto;
     padding: 20px;
     border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 #output p {
     margin: 0;
-    padding: 10px;
-    border-radius: 5px;
-    background: #f1f1f1;
-    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    max-width: 70%;
+    align-self: flex-start;
+}
+
+#output p:nth-child(even) {
+    background: #007bff;
+    color: #ffffff;
+    align-self: flex-end;
 }
 
 #message {
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     padding: 15px;
-    border: 1px solid #ddd;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
+    border-top: 1px solid #ddd;
 }
 
 #send {
-    width: 50px;
+    width: 60px;
     border: none;
-    background: #5cb85c;
+    background: #007bff;
     color: white;
     font-size: 16px;
     cursor: pointer;
+    border-top: 1px solid #ddd;
 }
 
 #send:hover {
-    background: #4cae4c;
+    background: #0056b3;
 }
