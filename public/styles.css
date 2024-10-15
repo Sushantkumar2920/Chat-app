@@ -1,7 +1,9 @@
-/* styles.css */
 body {
     font-family: 'Roboto', sans-serif;
-    background: #e9ecef;
+    background-image: url('/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +11,13 @@ body {
     margin: 0;
 }
 
+
 #chat-container {
     width: 500px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     border-radius: 15px;
     overflow: hidden;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
     display: flex;
     flex-direction: column;
 }
