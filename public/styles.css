@@ -1,0 +1,27 @@
+/* styles.css */
+#chat-container {
+    width: 300px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#chat-window {
+    height: 300px;
+    overflow-y: scroll;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#message {
+    width: calc(100% - 70px);
+    padding: 10px;
+}
+
+#send {
+    width: 50px;
+    padding: 10px;
+}
