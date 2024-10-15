@@ -11,6 +11,7 @@ function sendMessage() {
     message.value = '';
 }
 
+
 socket.on('chatMessage', function(data) {
     output.innerHTML += `<p>${data.message}</p>`;
 });
